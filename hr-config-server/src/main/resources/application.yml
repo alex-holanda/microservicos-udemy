@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+
+spring:
+  application:
+    name: hr-config-server
+  config:
+    activate:
+      on-profile: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - resources/hr-worker.yml
